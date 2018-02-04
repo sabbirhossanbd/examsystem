@@ -68,10 +68,27 @@
       return $result;
    }
    public function getTotalRows(){
-       $queryA = "SELECT * FROM tbl_question";
-       $getResult = $this->db->select($queryA);
-       $totall = $getResult->num_rows;
-          return $totall;
+       $query = "SELECT * FROM tbl_question";
+       $getResult = $this->db->select($query);
+       $total = $getResult->num_rows;
+          return $total;
+       }
+       public function getQuestion(){
+           $query = "SELECT * FROM tbl_question";
+           $getdata = $this->db->select($query);
+           $result = $getdata->fetch_assoc();
+           return $result;
+       }
+       public function getQuesByNumber($number){
+           $query = "SELECT * FROM tbl_question WHERE questionid = '$number'";
+           $getdata = $this->db->select($query);
+           $result = $getdata->fetch_assoc();
+           return $result; 
+       }
+       public function getAnswer($number){
+           $query = "SELECT * FROM tbl_answer WHERE questionid = '$number'";
+           $getdata = $this->db->select($query);
+           return $getdata;
        }
 }
 ?>
