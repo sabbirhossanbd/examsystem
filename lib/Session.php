@@ -1,7 +1,7 @@
 <?php
   class Session{
   	public static function init(){
-  		if(version_compare(phpversion(), '5.4.0', '<')){
+  		if(version_compare(phpversion(), '7.0.26', '<')){
   			if(session_id() == ''){
   				session_start();
   			}

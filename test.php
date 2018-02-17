@@ -1,4 +1,4 @@
-<?php include 'inc/header.php'; ?>
+<?php include 'inc/header.php';?>
 <?php 
   Session::checkSession();
     if(isset($_GET['q'])){
@@ -8,16 +8,54 @@
     }
     $total = $exm->getTotalRows();
     $question = $exm->getQuesByNumber($number);
+   
 ?>
 <?php 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
   	 $process = $pro->ProcessData($_POST);
+
   }
 ?>
-<div class="main">
+
+<script type="text/javascript">
+ 	          function timeout(){
+ 		         var minute =  Math.floor(timeleft/60);
+ 		         var second =  timeleft%60;
+
+ 		
+ 		       if(timeleft <= 0){
+ 		 	
+               clearTimeout(tim);
+                 
+                 alert("Time up!");
+                 document.forms[0].submit.click();
+
+                    }
+ 		       
+ 		      document.getElementById("time").innerHTML = minute+":"+second;
+                
+           timeleft--;
+ 		  var tim = window.setTimeout(function(){timeout()},1000);
+ 	    }
+ 	
+ 	
+ </script>
+ 
+ <body onload="timeout();">
+    
+   
+
+<div class="main" >
+	<div id="time" style="float: right;">Timeout</div>
+	   <script type="text/javascript">
+	   	var timeleft = 1*20;
+	   </script>
 	<h2>Question <?php echo $question['questionid']; ?> of <?php echo $total; ?></h2>
 	  <div class="test">
-	  	<form method="post" action="">
+	  	<form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>?q=<?php echo $number;?>" name="form1" >
+
+           
+
 	  		<table>
 	  			<tr>
 	  				<td colspan="2">
@@ -33,13 +71,13 @@
                   ?>
 	  			<tr>
 	  				<td>
-	  					<input type="radio" name="ans" value="<?php echo $result['id']; ?>" /><?php echo $result['ans']; ?>
+	  					<input type="radio" name="ans" value="<?php echo $result['ansid']; ?>" /><?php echo $result['ans']; ?>
 	  				</td>
 	  			</tr>
 	  			<?php 	} } ?>
 	  			<tr>
 	  				<td>
-	  					<input type="submit" name="submit" value="Next Question" />
+	  					<input type="submit" id="submit" name="submit" value="Next Question" />
 	  					<input type="hidden" name="number" value="<?php echo $number; ?>" />
 	  				</td>
 	  			</tr>
@@ -48,5 +86,6 @@
 	  	</form>
 	  </div>
 </div>
+</body>
 
 <?php include 'inc/footer.php'; ?>

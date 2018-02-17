@@ -19,10 +19,10 @@
     $selectedAns = $this->fm->validation($data['ans']);
     $number      = $this->fm->validation($data['number']);
     $selectedAns = mysqli_real_escape_string($this->db->link, $selectedAns);
-    $number = mysqli_real_escape_string($this->db->link, $number);
-    $next = $number + 1;
+    $number      = mysqli_real_escape_string($this->db->link, $number);
+    $next        = $number + 1;
 
-    if(!isset($_SESSION['score'])){
+    if(!isset($_SESSION['score'])){ 
       $_SESSION['score'] = '0';
     }
     $total = $this->getTotal();
@@ -46,7 +46,7 @@
   private function rightAns($number){
        $query = "SELECT * FROM tbl_answer WHERE questionid = '$number' AND rightans = '1'";
        $getdata = $this->db->select($query)->fetch_assoc();
-       $result = $getdata['id'];
+       $result = $getdata['ansid'];
        return $result;
   }
 }
