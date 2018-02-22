@@ -10,11 +10,11 @@
 
   ?>
   <style>
-  	.profile{width:500px;margin:0 auto;border:1px solid #ddd;padding: 20PX;margin-left: 35px;}
+  	.profile{width:500px;margin:0 auto;border:1px solid #ddd;padding: 20PX;}
   </style>
 
- <div class="main">
- 	<h1>Your Profile!!</h1>
+ <div class="main-exam">
+ 	<h2>Your Profile!!</h2>
  	<div class="profile">
  		<?php 
              if (isset($updateuser)) {
@@ -51,4 +51,4 @@
  </div>
  </div>
 
- <?php include 'inc/footer.php'; ?>
+ 

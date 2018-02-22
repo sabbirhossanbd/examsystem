@@ -15,7 +15,7 @@
 	text-decoration: none;
 }
 </style>
-<div class="main">
+<div class="main-views">
 	<h2>All Question answer : <?php echo $total; ?></h2>
 	  <div class="viewans">
 	  
@@ -44,7 +44,7 @@
 	  					<input type="radio"/>
 	  					<?php 
 	  					if ($result['rightans'] == '1') {
-	  						echo "<span style='color:green'>".$result['ans']."</span>";
+	  						echo "<span style='color:#97f260'>".$result['ans']."</span>";
 	  					}else{
 	  						echo $result['ans'];
 	  					}
@@ -61,4 +61,3 @@
 	  </div>
 </div>
 
-<?php include 'inc/footer.php'; ?>

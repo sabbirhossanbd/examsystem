@@ -45,7 +45,7 @@
     
    
 
-<div class="main" >
+<div class="main-exam" >
 	<div id="time" style="float: right;">Timeout</div>
 	   <script type="text/javascript">
 	   	var timeleft = 1*20;
@@ -88,4 +88,3 @@
 </div>
 </body>
 
-<?php include 'inc/footer.php'; ?>

@@ -1,6 +1,6 @@
-<section class="footeroption">
+<div class="footeroption">
 			<h2>Thank you for joning with us</h2>
-		</section>
+		</div>
 	</div>
   
 </body>

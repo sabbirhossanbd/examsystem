@@ -2,16 +2,15 @@
   <?php
    Session::checkSession();
   ?>
-<div class="main">
-	<h3>Welcome to online Exam - Start Now</h3>
-	  <div class="segment" style="margin-right: 30px;">
-	  	<img src="" />
-	  </div>
+<div class="main-exam">
+	<h2>Welcome to online Exam</h2>
+	<h2>Please select the subject !!</h2>
+	  
+	
 	  <div class="segment">
 	  	<h2>Start Test</h2>
-	  	<ul>
-	  		<li><a href="starttest.php">Start Now...</a></li>
-	  	</ul>
+	  	    <div class="str">
+	  		<a href="starttest.php"><button>Start Now</button></a>
+	  	    </div>
 	  </div>
 </div>
-<?php include 'inc/footer.php'; ?>

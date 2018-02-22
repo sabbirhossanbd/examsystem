@@ -30,14 +30,14 @@
 	text-align: center;
 	text-decoration: none;
 }
-.starttest{width:500px;margin:0 auto;border:1px solid #ddd;padding: 20PX;margin-left: 35px;}
+.starttest{width:500px;margin:0 auto;border:1px solid #ddd;padding: 20PX;}
   </style>
 
-<div class="main">
+<div class="main-exam">
 	<h2>Welcome to online Exam</h2>
 	  <div class="starttest">
 	  	<h2>Test your Knowledge</h2>
-	  	<p>This is multiple choice system.</p>
+	  	<strong>This is multiple choice system.</strong>
 	  	<ul>
 	  		<li><strong>Number of Question : </strong><?php echo $total; ?></li>
 	  		<li><strong>Question Type : </strong>Multiple Choice</li>
@@ -45,4 +45,3 @@
 	  	<a href="test.php?q=<?php echo $question['questionid']?>">Start Test</a>
 	  </div>
 </div>
-<?php include 'inc/footer.php'; ?>

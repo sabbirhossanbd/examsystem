@@ -1,10 +1,6 @@
 
-.avatar{
-	width: 100%;
-    height:80px;
-}
 .headeroption{
-	width: 60%;
+	width: auto;
 	text-align: center;
 	border: 2px solid grey;
 	padding-bottom: -50px;
@@ -12,8 +8,13 @@
 	height: auto;
 }
 .footeroption{
-	width: 60.4%;
+	width: 800px;
 	height: 30px;
+    position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
 	background-color: #7f7775;
 	text-align: center;
 	
@@ -24,18 +25,15 @@
 }
 .content{
 	align-content: center;
-	padding-left: 340px;
+	
 	
 }
 .maincontent{
-	width: 60%;
+	width: auto;
     border: 2px solid grey;
 }
 
-input[type=text], input[type=password]{
-	margin:6px 0;
-	border: 2px solid #ccc;
-}
+
 button{
 	background-color: #4CAF50;
 	color: black;
@@ -55,9 +53,16 @@ button:hover{
 
 }
 .topnav {
-	overflow: hidden;
+	height: 50px;
+	width: 800px;
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border: 2px solid #7f2c12;
 	background-color: #333;
-	width: 60.4%
+
 }
 .topnav a{
    float: left;
@@ -76,13 +81,13 @@ button:hover{
 	
 }
 .error{
-	color: #FF0000;
+	color: #fd521c;
 	}
 .empty{
-    color: #FF0000;
+    color: #fd521c;
 		} 
 .disable{
-    color: #FF0000;
+    color: #fd521c;
 	}
 
 
@@ -106,6 +111,11 @@ button:hover{
 }
 
 .starttest{
+	width:500px;
+	margin:0 auto;
+	border:1px solid #ddd;
+	padding: 20PX;
+	margin-left: 35px;
 	border: 2px solid #f4f4f4;
 	width: 590px;
 	padding: 20px;
@@ -132,11 +142,183 @@ button:hover{
 }
 
 
+body{
+	height: 800px;
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	font-family: sans-serif;
+}
+.loginBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 420px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.user{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+.loginBox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"]
+.loginBox input[type="password"]
+{
+  border:none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+
+}
+::placeholder{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]{
+   border: none;
+   outline: none;
+   height: 40px;
+   color: #fff;
+   font-size: 16px;
+   background: #ff267e;
+   cursor: pointer;
+   border-radius: 20px;
+
+}
+.loginBox input[type="submit"]:hover{
+	background: #efed40;
+	color: #262626;
+
+}
+.loginBox a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
 
 
+.loginBoxx{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 600px;
+	margin-top: 60px;
+	padding: 60px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.loginBoxx p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBoxx input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBoxx input[type="text"]
+.loginBoxx input[type="password"]
+{
+  border:none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
 
+}
+.loginBoxx input[type="submit"]{
+   border: none;
+   outline: none;
+   height: 40px;
+   color: #fff;
+   font-size: 19px;
+   background: #ff267e;
+   cursor: pointer;
+   border-radius: 20px;
 
+}
+.loginBoxx input[type="submit"]:hover{
+	background: #efed40;
+	color: #262626;
 
+}
+.loginBoxx a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
 
+}
 
+.main-exam{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 500px;
+	margin-top: 50px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.main-views{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: auto;
+	margin-top: 650px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+}
+.wel{
+   float:right;
+   color: #fff;
+   padding: 14px 16px;
+   text-align: center;
+   text-decoration: none;
+   background-color: #333;
+   width: 250px;
+}
+.str{
+	text-align: center;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
 

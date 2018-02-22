@@ -1,77 +1,38 @@
-<?php include 'inc/header.php';
-     
- ?>
+<?php include 'inc/header.php'; ?>
+
+
           <?php 
            Session::checklogin();
           ?>
 			 
-                <div class="row_main">
-                	<div class="main-login main-center">
-                		<h4>Sign up once for give any test..</h4>
-                    
-                		 <form action="" method="POST">
-                		 	
-                		 	<div class="form-group">
-                		 		<label for="name" class="cols-sm-2 control-label">Your Name</label>
-                		 		  <div class="cols-sm-10">
-                		 		  	<div class="input-group">
-                		 		  		<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                		 		  		<input type="text" class="form-control" name="name" id="name" placeholder="Enter your name"/>
-                		 		  	</div>
-                		 		  </div>
-                		 	</div>
-                		 <div class="form-group">
-                		 	<label for="email" class="cols-sm-2 control-label">Your Email</label>
-                		 	<div class="cols-sm-10">
-                		 		<div class="input-group">
-                		 			<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                		 			<input type="text" class="form-control" name="email" id="email" placeholder="Enter your email"/>
-                		 		</div>
-                		 	</div>
-                		 </div>
-                	    <div class="form-group">
-                	    	<label for="username" class="cols-sm-2 control-label">Username</label>
-                	    	<div class="cols-sm-10">
-                	    		<div class="input-group">
-                	    			<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                	    			<input type="text" class="form-control" name="username" id="username" placeholder="Enter your username"/>
-                	    		</div>
-                	    	</div>
-                	    </div>
-                	   <div class="form-group">
-                	   	 <label for="password" class="cols-sm-2 control-label">Password</label>
-                	   	 <div class="cols-sm-10">
-                	   	 	<div class="input-group">
-                	   	 		<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                	   	 		<input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" />
-                	   	 	</div>
-                	   	 </div>
-                	   </div>
-                	 <div class="form-group">
-                	   	 <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
-                	   	 <div class="cols-sm-10">
-                	   	 	<div class="input-group">
-                	   	 		<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                	   	 		<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Retype your password"/>
-                	   	 	</div>
-                	   	 </div>
-                	   </div>
-                	 <div class="form-group">
-                	 	<input type="submit" id="regsubmit" value="Signup"/>
-                	 </div>
-                		 </form> 
 
-                	<p>Already Registered ? <a href="index.php">Login</a></p>
-                     <span id="state"></span>
-                    
-                	</div>
-                  </div>
-                     
+    
+     <div class="loginBoxx">
+        <img src="img/man.png" class="user">
+        <h2>Sign Up Here</h2>
+        <form action="" method="post">
+            <p>Your Name</p>
+            <input type="text" name="name" id="name" placeholder="Enter your name" />
+            <p>Your Email</p>
+            <input type="text" name="email" id="email" placeholder="Example@gmail.com" />
+            <p>Your User Name</p>
+            <input type="text" name="username" id="username" placeholder="Enter your username" />
+            <p>Enter Password</p>
+            <input type="password" name="password" id="password" placeholder="*********" />
+            <p>Retype Password</p>
+            <input type="password" name="confirm" id="confirm" placeholder="*********" />
+
+            <input type="submit" id="regsubmit" value="Signup" />
+             <span id="state"></span>
+            <h4>Already Registered? <a href="index.php">Login</a></h4>
+             
+            
+        </form>
+    </div>
+  
+
 			
 			
-
-       <?php include 'inc/footer.php';
-       //include 'getregister.php';
-       ?>
+<?php include 'inc/footer.php'; ?>       
 	
 		

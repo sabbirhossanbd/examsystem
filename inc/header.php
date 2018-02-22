@@ -46,9 +46,7 @@
   ?>
 
 	<div class="content">
-		<section class="headeroption">
-			<img src="./img/header.jpg" alt="Avatar" class="avatar">
-		</section>
+		
 		<div class="topnav">
       <?php 
         $login = Session::get("login");
@@ -57,6 +55,7 @@
 		   
        <a href="profile.php">Profile</a>
        <a href="exam.php">Exam</a>
+       
        <a href="?action=logout">Logout</a>
        <?php } else { ?>
        <a href="index.php">Login</a>
@@ -67,7 +66,7 @@
         $login = Session::get("login");
         if($login == true){ 
       ?>
-      <span style="float: right;color: #888">
+      <span class="wel">
         Welcome <strong><?php echo Session::get("name"); ?></strong>
       </span>
       <?php } ?>
