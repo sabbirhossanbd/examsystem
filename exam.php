@@ -10,7 +10,9 @@
 	  <div class="segment">
 	  	<h2>Start Test</h2>
 	  	    <div class="str">
-	  		<a href="starttest.php"><button>Start Now</button></a>
+	  		<a href="starttest.php"><button>Math Quiz</button></a>
+	  		<a href="startCsetest.php"><button>Computer Quiz</button></a>
+	  		<a href="startEngtest.php"><button>English Quiz</button></a>
 	  	    </div>
 	  </div>
 </div>

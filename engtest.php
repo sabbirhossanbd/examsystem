@@ -6,13 +6,13 @@
     }else{
     	header("Location:exam.php");
     }
-    $total = $exm->getTotalRows();
-    $question = $exm->getQuesByNumber($number);
+    $total = $exm->getEngTotalRows();
+    $question = $exm->getEngQuesByNumber($number);
    
 ?>
 <?php 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  	 $process = $pro->ProcessData($_POST);
+  	 $process =  $pro->engProcessData($_POST);
 
   }
 ?>
@@ -63,7 +63,7 @@
 	  				</td>
 	  			</tr>
                   <?php
-                    $answer = $exm->getAnswer($number);
+                    $answer = $exm->getEngAnswer($number);
                     if($answer){
                     	while ($result = $answer->fetch_assoc()) {
                     		

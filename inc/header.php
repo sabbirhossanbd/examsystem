@@ -15,6 +15,7 @@
     $usr = new User();
     $exm = new Exam();
     $pro = new Process();
+    
 
     header("Cache-control: no-store, no-cache, must-revalidate");
     header("Cache-control: pre-check=0, post-check=0, max-age=0");
@@ -48,6 +49,9 @@
 	<div class="content">
 		
 		<div class="topnav">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">OES</a>
+      </div>
       <?php 
         $login = Session::get("login");
         if($login == true){ 

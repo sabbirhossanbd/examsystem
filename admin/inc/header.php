@@ -35,10 +35,14 @@
  				<a class="navbar-brand" href="#">OES</a>
  			</div>
  			<ul class="nav navbar-nav">
- 				<li class="active"><a href="home.php">Home</a></li>
+ 				<li class="active"><a href="index.php">Home</a></li>
  				<li><a href="users.php">Manage User</a></li>
  				<li><a href="addQuestion.php">Add Question</a></li>
+        <li><a href="english.php">Eng Question</a></li>
+        <li><a href="cse.php">Cse Question</a></li>
  				<li><a href="questionlist.php">Question List</a></li>
+        <li><a href="engquestionlist.php">Eng Question List</a></li>
+        <li><a href="csequestionlist.php">Cse Question List</a></li>
  				<li><a href="?action=logout" >Logout</a></li>
  			</ul>
  		</div>
