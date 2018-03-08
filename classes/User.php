@@ -31,7 +31,7 @@
       
       
       
-      if($name == "" || $email == "" || $username == "" || $password == "" || $confirm == ""){
+      if($name == "" || $email == "" || $username == "" || $password == "" || $confirm == "" ){
           echo "<span class='error'> Field Must Not be Empty..</span>";
           exit();
         }else if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {

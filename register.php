@@ -4,13 +4,12 @@
           <?php 
            Session::checklogin();
           ?>
-			 
-
+		
     
      <div class="loginBoxx">
         <img src="img/man.png" class="user">
         <h2>Sign Up Here</h2>
-        <form action="" method="post">
+        <form action="" method="post" >
             <p>Your Name</p>
             <input type="text" name="name" id="name" placeholder="Enter your name" />
             <p>Your Email</p>
