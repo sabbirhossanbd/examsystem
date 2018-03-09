@@ -9,6 +9,7 @@
 			<p>Password</p>
 			<input type="password" name="password" id="password" placeholder="*********" />
 			<input type="submit" name="login" id="loginsubmit" value="Login" />
+			<h4><a href="reset.php">Forgotten Password</a><h4>
 			<h4>New User? <a href="register.php">signup</a> free</h4>
 
 			<span class="empty" style="display: none">Field Must Not Be Empty!</span>

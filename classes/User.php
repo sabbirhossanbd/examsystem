@@ -31,7 +31,7 @@
       
       
       
-      if($name == "" || $email == "" || $username == "" || $password == "" || $confirm == "" ){
+      if($name == "" || $email == "" || $username == "" || $password == ""){
           echo "<span class='error'> Field Must Not be Empty..</span>";
           exit();
         }else if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -40,7 +40,8 @@
       }else if ($password != $confirm){
        echo "<span class='error'>Password Did Not Match !</span>";
        exit();
-      }else{
+     }
+      else{
         $chkquery = "SELECT * FROM tbl_user WHERE email = '$email'";
         $chkresult = $this->db->select($chkquery);
         if($chkresult != false){
